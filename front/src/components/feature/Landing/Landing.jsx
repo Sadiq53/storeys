@@ -22,6 +22,7 @@ const Landing = () => {
         <Frame />
         <Testimonial />
         <FormSection />
+        
         <Footer />
     </>
   )
