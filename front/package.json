@@ -11,14 +11,17 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.1",
+    "@studio-freight/react-lenis": "^0.0.47",
     "axios": "^1.7.9",
     "gsap": "^3.12.7",
+    "prop-types": "^15.8.1",
     "react": "^19.0.0",
     "react-countup": "^6.5.3",
     "react-dom": "^19.0.0",
     "react-intersection-observer": "^9.15.1",
     "react-redux": "^9.2.0",
     "react-router-dom": "^6.29.0",
+    "react-scroll-parallax": "^3.4.5",
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1"
   },

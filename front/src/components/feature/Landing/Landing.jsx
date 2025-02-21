@@ -1,28 +1,34 @@
 import Header from "../../shared/Header/Header"
-import Banner from "./Helpers/Banner"
+import Banner from "../../shared/Banner/Banner"
 import DevSection from "./Developers/DevSection"
-import About from "./About/About"
+import About from "../../shared/About/About"
+import AboutComp from "./Helpers/AboutComp"
 import Properties from "./Properties/Properties"
-import FixedBg from "../FixedBg/FixedBg"
+import FixedBg from "../../shared/FixedBg/FixedBg"
 import PopularAreas from "./Popular/PopularAreas"
-import Frame from "../Frame/Frame"
-import Testimonial from "../Testimonial/Testimonial"
-import FormSection from "../Form/FormSection"
+import Frame from "../../shared/Frame/Frame"
+import Testimonial from "../../shared/Testimonial/Testimonial"
+import FormSection from "../../shared/Form/FormSection"
 import Footer from "../../shared/Footer/Footer"
+import { homeBanner } from "../../../utils/static/bannerData"
+import { homeFrame } from "../../../utils/static/frameData"
+import FixedBgComp from "./Helpers/FixedBgComp"
 const Landing = () => {
+
+  const {title, description, isFilter, bg, width, height} = homeBanner  
+
   return (
     <>
         <Header />
-        <Banner />
+        <Banner title={title} description={description} isFilter={isFilter} bg={bg} width={width} height={height} />
         <DevSection />
-        <About />
+        <About Component={AboutComp} />
         <Properties />
-        <FixedBg />
+        <FixedBg height={290} Component={<FixedBgComp />} />
         <PopularAreas />
-        <Frame />
+        <Frame frame={homeFrame} />
         <Testimonial />
         <FormSection />
-        
         <Footer />
     </>
   )
